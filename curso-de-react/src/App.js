@@ -4,6 +4,7 @@ import HelloWord from './Componentes/HelloWord';
 import SayMyName from './Componentes/SayMyName';
 import Pessoa from './Componentes/Pessoa';
 import Frases from './Componentes/Frases';
+import List from './Componentes/List'
 
 function App() {
   const name = `Everton`
@@ -24,6 +25,7 @@ function App() {
         profissao="Dev"
         foto="https://pbs.twimg.com/media/GIi1mdSWEAAa8jF?format=png&name=360x360"
       />
+      <List/>
     </div>
   );
 }
