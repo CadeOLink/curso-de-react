@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWord from './Componentes/HelloWord';
+import SayMyName from './Componentes/SayMyName';
+import Pessoa from './Componentes/Pessoa';
+import Frases from './Componentes/Frases';
 
 function App() {
   const name = `Everton`
@@ -10,12 +13,17 @@ function App() {
   }
   return (
     <div className="App" /* NUNCA UTILIZE APENAS CLASS, O JSX COMPREENDE COM CLASSE NA LINGUAGEM DELE, LOGO USE CLASSNAME */>
-      {/* <h1>Olá mundo</h1>
-      <p>Meu nome é {name.toLocaleUpperCase()}</p>
-      <p>Soma: {sum(2,2)}</p>
-      <img src={url} alt="Imagem" /> */}
-
-      <HelloWord/>
+      {/* <HelloWord/> */}
+      <Frases/>
+      <Frases/>
+      <SayMyName nome="Everton"/>
+      <SayMyName nome="Evelyn"/>
+      <Pessoa 
+        nome="Everton"
+        idade="21"
+        profissao="Dev"
+        foto="https://pbs.twimg.com/media/GIi1mdSWEAAa8jF?format=png&name=360x360"
+      />
     </div>
   );
 }
